@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 61d3d499a7eee9842a996e4864d0c716
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: cuve
+    100002: generateur
+    100004: mort_cuve
+    100006: mort_electricite
+    100008: mort_presse
+    100010: pCylinder1
+    100012: perso
+    100014: porte_1
+    100016: porte_2
+    100018: presse
+    100020: salle
+    100022: //RootNode
+    100024: sceau
+    100026: switch_porte
+    100028: switch_presse
+    100030: table_outils
+    100032: tapis
+    100034: trigger_outils
+    100036: trigger_seau
+    100038: trigger_switch_porte
+    100040: trigger_switch_presse
+    400000: cuve
+    400002: generateur
+    400004: mort_cuve
+    400006: mort_electricite
+    400008: mort_presse
+    400010: pCylinder1
+    400012: perso
+    400014: porte_1
+    400016: porte_2
+    400018: presse
+    400020: salle
+    400022: //RootNode
+    400024: sceau
+    400026: switch_porte
+    400028: switch_presse
+    400030: table_outils
+    400032: tapis
+    400034: trigger_outils
+    400036: trigger_seau
+    400038: trigger_switch_porte
+    400040: trigger_switch_presse
+    2100000: lambert1
+    2100002: lambert4
+    2100004: lambert3
+    2100006: lambert2
+    2100008: lambert5
+    2300000: cuve
+    2300002: generateur
+    2300004: mort_cuve
+    2300006: mort_electricite
+    2300008: mort_presse
+    2300010: pCylinder1
+    2300012: perso
+    2300014: porte_1
+    2300016: porte_2
+    2300018: presse
+    2300020: salle
+    2300022: sceau
+    2300024: switch_porte
+    2300026: switch_presse
+    2300028: table_outils
+    2300030: tapis
+    2300032: trigger_outils
+    2300034: trigger_seau
+    2300036: trigger_switch_porte
+    2300038: trigger_switch_presse
+    3300000: cuve
+    3300002: generateur
+    3300004: mort_cuve
+    3300006: mort_electricite
+    3300008: mort_presse
+    3300010: pCylinder1
+    3300012: perso
+    3300014: porte_1
+    3300016: porte_2
+    3300018: presse
+    3300020: salle
+    3300022: sceau
+    3300024: switch_porte
+    3300026: switch_presse
+    3300028: table_outils
+    3300030: tapis
+    3300032: trigger_outils
+    3300034: trigger_seau
+    3300036: trigger_switch_porte
+    3300038: trigger_switch_presse
+    4300000: perso
+    4300002: switch_porte
+    4300004: switch_presse
+    4300006: presse
+    4300008: porte_1
+    4300010: porte_2
+    4300012: sceau
+    4300014: generateur
+    4300016: tapis
+    4300018: cuve
+    4300020: salle
+    4300022: table_outils
+    4300024: mort_cuve
+    4300026: mort_electricite
+    4300028: mort_presse
+    4300030: pCylinder1
+    4300032: trigger_switch_presse
+    4300034: trigger_seau
+    4300036: trigger_switch_porte
+    4300038: trigger_outils
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
