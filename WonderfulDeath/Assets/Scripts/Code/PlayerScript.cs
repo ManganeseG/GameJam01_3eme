@@ -19,9 +19,24 @@ public class PlayerScript : MonoBehaviour
 
         PlayerControl(horizontal, vertical);
 
-
         transform.position += new Vector3(horizontal, 0f, vertical);
+    }
 
+    private void Update()
+    {
+        if(DeathTrigger.isDying != DeathTrigger.ListOfDeath.None)
+        {
+            StartCoroutine(die());
+        }
+        
+    }
+
+    IEnumerator die()
+    {
+        Debug.Log("WaitingToDie");
+        yield return new WaitUntil(() => Input.GetButton("Fire1"));
+        DeathTrigger.isDying = DeathTrigger.ListOfDeath.None;
+        Debug.Log("WonderfullyDead");
     }
 
     void PlayerControl(float horizontal, float vertical)
@@ -29,7 +44,6 @@ public class PlayerScript : MonoBehaviour
         if(horizontal != 0f || vertical != 0f)
         {
             Vector3 targetDirection = new Vector3(horizontal, 0f, vertical);
-
             
             Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
             Quaternion newRotation = Quaternion.Lerp(transform.rotation, targetRotation, turnSmoothing * Time.deltaTime);

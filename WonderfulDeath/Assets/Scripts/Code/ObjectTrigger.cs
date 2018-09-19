@@ -19,6 +19,8 @@ public class ObjectTrigger : MonoBehaviour
     public Text TextDoor;
     public Text TextPress;
     private Text textToTrigger;
+    public static bool holdingTool = false;
+    public static bool holdingBucket = false;
 
     private bool gotItem = false;
     [HideInInspector]public bool openDoor = false;
@@ -69,19 +71,37 @@ public class ObjectTrigger : MonoBehaviour
                     rightDoorAnim.SetBool("Open", false);
                 }
             }
-
-            if (TriggerType == ListOfTrigger.Bucket && TextTool.enabled == true)
+            if (TriggerType == ListOfTrigger.Bucket)
             {
-                TextTool.enabled = false;
+                holdingBucket = true;
+                if(TextTool.enabled == true)
+                {
+                    TextTool.enabled = false;
+                }
             }
-             if (TriggerType == ListOfTrigger.Tool && TextBucket.enabled == true)
+             if (TriggerType == ListOfTrigger.Tool)
             {
-                TextBucket.enabled = false;
+                holdingTool = true;
+                if(TextBucket.enabled == true)
+                {
+                    TextBucket.enabled = false;
+                }
             }
-            if (Input.GetButton("Fire2") && (TriggerType == ListOfTrigger.Tool || TriggerType == ListOfTrigger.Bucket))
+            if (Input.GetButton("Fire2"))
            {
-               gotItem = false;
-               textToTrigger.enabled = false;
+                if(TriggerType == ListOfTrigger.Tool)
+                {
+                    holdingTool = false;
+                }
+                if (TriggerType == ListOfTrigger.Bucket)
+                {
+                    holdingBucket = false;
+                }
+                if ((TriggerType == ListOfTrigger.Tool || TriggerType == ListOfTrigger.Bucket))
+                {
+                    gotItem = false;
+                    textToTrigger.enabled = false;
+                }
            }
         }
 
